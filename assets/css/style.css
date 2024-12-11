@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/minecraft\ dirt\ background.jpg);
+    display: flex;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+}
+
+.userIdPopup {
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    background-color: #ffffff;
+}
+
+.userIconSelection {
+    height: 50vh;
+    width: 100vw;
+    top: 25vh;
+    left: 0;
+    background-image: url(../images/minecraft\ old\ world\ generation\ ultra\ wide.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userIcon {
+    background-color: #ffffff;
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userIcon img{
+    height: 75%;
+}
