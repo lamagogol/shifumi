@@ -1,3 +1,28 @@
+@font-face {
+    font-family: minecraft title; /*The name you choose goes here*/
+    src: url(../font/minecraft-evenings-font/MinecraftEvenings-lgvPd.ttf);
+}
+
+@font-face {
+    font-family: minecraft font; /*The name you choose goes here*/
+    src: url(../font/minecraft-font/MinecraftRegular-Bmg3.otf);
+}
+
+@font-face {
+    font-family: minecraft font italic; /*The name you choose goes here*/
+    src: url(../font/minecraft-font/MinecraftItalic-R8Mo.otf);
+}
+
+@font-face {
+    font-family: minecraft font bold; /*The name you choose goes here*/
+    src: url(../font/minecraft-font/MinecraftBold-nMK1.otf);
+}
+
+@font-face {
+    font-family: minecraft font bold italic; /*The name you choose goes here*/
+    src: url(../font/minecraft-font/MinecraftBoldItalic-1y1e.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +53,7 @@ body {
     left: 0;
     background-image: url(../images/minecraft\ old\ world\ generation\ ultra\ wide.jpg);
     background-size: cover;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
 }
@@ -45,4 +70,9 @@ body {
 
 .userIcon img{
     height: 75%;
+}
+
+.userIdPopup p {
+    font-size: 2em;
+    font-family: 'minecraft title';
 }
