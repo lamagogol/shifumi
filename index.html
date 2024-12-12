@@ -10,19 +10,19 @@
     <body>
         <div class="popup userIdPopup">
             <div class="popup userIconSelection">
-                <div class="userIcon">
+                <div class="userIcon creeper">
                     <img src="./assets/images/creeper.png" alt="minecraft creeper user icon">
                 </div>
-                <div class="userIcon">
+                <div class="userIcon enderman">
                     <img src="./assets/images/enderman.png" alt="minecraft enderman user icon">
                 </div>
-                <div class="userIcon">
+                <div class="userIcon enderDragon">
                     <img src="./assets/images/ender dragon.png" alt="minecraft enderdragon user icon">
                 </div>
-                <div class="userIcon">
+                <div class="userIcon witherStorm">
                     <img src="./assets/images/wither storm.webp" alt="minecraft witherstorm user icon">
                 </div>
-                <div class="userIcon">
+                <div class="userIcon herobrine">
                     <img src="./assets/images/herobrine.png" alt="minecraft herobrine user icon">
                 </div>
             </div>
@@ -33,8 +33,9 @@
                 </div>
                 <form method="post">
                     <label for="nickname">Votre pseudo :</label>
-                    <input type="text" id="nickname" name="lname" required minlength="1" spellcheck="false" placeholder="steve">
-                    <input type="submit" value="Commencer la partie" class="submitButton">
+                    <input type="text" id="nickname" name="lname" spellcheck="false" placeholder="steve" value="">
+                    <div class="submitButton">Commencer la partie</div>
+                    <span class="error"></span>
                 </form>
             </div>
         </div>

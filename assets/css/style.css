@@ -39,7 +39,7 @@ body {
 
 .popup {
     position: fixed;
-    display: none;
+    display: flex;
 }
 
 .userIdPopup {
@@ -129,6 +129,12 @@ body {
 
 .userIdPopup .submitButton {
     width: fit-content;
+}
+
+.submitButton {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 
 
