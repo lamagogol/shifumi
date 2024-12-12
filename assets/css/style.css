@@ -35,7 +35,7 @@ body {
 
 .popup {
     position: fixed;
-    display: flex;
+    display: none;
 }
 
 .userIdPopup {
@@ -52,6 +52,7 @@ body {
 
 .userIdPopup>div:last-child {
     backdrop-filter: blur(5px);
+    /* filter: blur(5px); a faire quand on choisi l'avatar*/
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -59,6 +60,7 @@ body {
 }
 
 .userIconSelection {
+    z-index: 1;
     height: 50vh;
     width: 100vw;
     top: 25vh;
