@@ -79,7 +79,7 @@ body {
     align-items: center;
 }
 
-.userIcon {
+.userIcon, .userIconSelected, .playerIcon, .botIcon {
     height: 35%;
     background-color: #ffffff99;
     border-radius: 200px;
@@ -90,7 +90,7 @@ body {
     align-items: center;
 }
 
-.userIcon img{
+.userIcon img, .userIconSelected img, .playerIcon img, .botIcon img {
     height: 75%;
 }
 
@@ -141,18 +141,23 @@ body {
 }
 
 header {
+    height: 5%;
     display: flex;
     justify-content: space-between;
 }
 
 header div {
-    width: 20%;
+    width: 25%;
     font-family: "minecraft font bold italic";
     color: #ffffff;
     font-size: 1.5em;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+header div:hover {
+    color: #ff0000;
 }
 
 header div img {
@@ -170,10 +175,93 @@ header p {
 }
 
 header h1 {
-    width: 20%;
+    width: 25%;
     font-family: "minecraft title";
-    background: linear-gradient(to right, #5867c8, #cedc2c);
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to right, #5867c8, #5867c8, #cedc2c);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    height: 95%;
+}
+
+.userChoices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shifumiChoice {
+    height: 200px;
+    width: 200px;
+    border: 10px solid #c13232;
+    background-image: url(../images/white\ wool.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shifumiChoice img {
+    height: 75%;
+}
+
+.vs {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.vs p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "minecraft font";
+    font-size: 2em;
+}
+
+.whosSuperior {
+    color: #ffffff;
+    font-family: "minecraft font";
+    font-size: 10em;
+}
+
+.rules {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    padding: 10vh;
+    border-radius: 100px;
+    border: 10px solid #000000;
+    font-family: "minecraft font";
+    font-size: 2em;
+}
+
+.rules div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.rules div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #ff0000;
+    border-radius: 50px;
 }
