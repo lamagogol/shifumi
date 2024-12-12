@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Shield Axe Bow</title>
         <link rel="stylesheet" href="./assets/css/style.css">
         <script defer src="./assets/js/script.js"></script>
     </head>
@@ -26,15 +26,17 @@
                     <img src="./assets/images/herobrine.png" alt="minecraft herobrine user icon">
                 </div>
             </div>
-            <p>Veuillez selectionner une image de joueur en cliquant ci-dessous</p>
-            <div class="userIcon">
-                <img src="./assets/images/creeper.png" alt="minecraft creeper user icon">
+            <div>
+                <p>Veuillez selectionner un avatar en cliquant ci-dessous, puis entrez votre pseudo</p>
+                <div class="userIcon">
+                    <img src="./assets/images/creeper.png" alt="minecraft creeper user icon">
+                </div>
+                <form method="post">
+                    <label for="nickname">Votre pseudo :</label>
+                    <input type="text" id="nickname" name="lname" required minlength="1" spellcheck="false" placeholder="steve">
+                    <input type="submit" value="Commencer la partie" class="submitButton">
+                </form>
             </div>
-            <form method="post">
-                <label for="nickname">Votre nom :</label>
-                <input type="text" id="nickname" name="lname">
-                <input type="submit" value="Submit">
-            </form>
         </div>
     </body>
 </html>

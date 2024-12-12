@@ -1,25 +1,25 @@
 @font-face {
-    font-family: minecraft title; /*The name you choose goes here*/
+    font-family: minecraft title;
     src: url(../font/minecraft-evenings-font/MinecraftEvenings-lgvPd.ttf);
 }
 
 @font-face {
-    font-family: minecraft font; /*The name you choose goes here*/
+    font-family: minecraft font;
     src: url(../font/minecraft-font/MinecraftRegular-Bmg3.otf);
 }
 
 @font-face {
-    font-family: minecraft font italic; /*The name you choose goes here*/
+    font-family: minecraft font italic;
     src: url(../font/minecraft-font/MinecraftItalic-R8Mo.otf);
 }
 
 @font-face {
-    font-family: minecraft font bold; /*The name you choose goes here*/
+    font-family: minecraft font bold;
     src: url(../font/minecraft-font/MinecraftBold-nMK1.otf);
 }
 
 @font-face {
-    font-family: minecraft font bold italic; /*The name you choose goes here*/
+    font-family: minecraft font bold italic;
     src: url(../font/minecraft-font/MinecraftBoldItalic-1y1e.otf);
 }
 
@@ -43,7 +43,19 @@ body {
     width: 80vw;
     top: 10vh;
     left: 10vw;
-    background-color: #ffffff;
+    background-image: url(../images/diamond\ ore\ backgroung.webp);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userIdPopup>div:last-child {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .userIconSelection {
@@ -59,7 +71,8 @@ body {
 }
 
 .userIcon {
-    background-color: #ffffff;
+    height: 35%;
+    background-color: #ffffff99;
     border-radius: 200px;
     height: 200px;
     width: 200px;
@@ -73,6 +86,39 @@ body {
 }
 
 .userIdPopup p {
-    font-size: 2em;
+    height: 30%;
+    padding: 0 10%;
+    font-size: 2.5em;
     font-family: 'minecraft title';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.userIdPopup form {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userIdPopup form label {
+    font-size: 2em;
+    font-family: 'minecraft font';
+    color: #ffffff;
+}
+
+.userIdPopup form input {
+    height: 20%;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1em;
+    display: flex;
+}
+
+.userIdPopup .submitButton {
+    width: fit-content;
 }
