@@ -9,7 +9,10 @@ let herobrine=document.querySelector(".herobrine");
 let nickname=document.querySelector("#nickname").value;
 let submit=document.querySelector(".submitButton");
 let error=document.querySelector(".error");
-let overallPlayerIcon=document.querySelector(".playerIcon")
+let overallPlayerIcon=document.querySelector(".playerIcon");
+let rules=document.querySelector(".rulesButton");
+let rulesPopup=document.querySelector(".rules");
+let rulesClosingButton=document.querySelector(".rules div p");
 
 selectIcon.addEventListener("click", function() {
     selectingIcon.style.display="flex";
@@ -53,3 +56,12 @@ submit.addEventListener("click", function(){
     //     error.textContent = "Veuillez entrez un pseudo"
     // }
 })
+
+rules.addEventListener("click", function(){
+    rulesPopup.style.display="flex";
+})
+
+rulesClosingButton.addEventListener("click", function(){
+    rulesPopup.style.display="none";
+})
+
