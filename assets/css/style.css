@@ -29,8 +29,12 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background-image: url(../images/minecraft\ dirt\ background.jpg);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup {
@@ -52,11 +56,14 @@ body {
 
 .userIdPopup>div:last-child {
     backdrop-filter: blur(5px);
-    /* filter: blur(5px); a faire quand on choisi l'avatar*/
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.blured {
+    filter: blur(5px);
 }
 
 .userIconSelection {
@@ -92,7 +99,6 @@ body {
     padding: 0 10%;
     font-size: 2.5em;
     font-family: 'minecraft title';
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,4 +129,51 @@ body {
 
 .userIdPopup .submitButton {
     width: fit-content;
+}
+
+
+
+.shifumiMain {
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    width: 20%;
+    font-family: "minecraft font bold italic";
+    color: #ffffff;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+header p {
+    font-size: 2em;
+    font-family: "minecraft font bold";
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    width: 20%;
+    font-family: "minecraft title";
+    background: linear-gradient(to right, #5867c8, #cedc2c);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
 }
