@@ -150,13 +150,13 @@ function displayPlay(){
 
 function oneDisplay(numb){
     if (numb===0){
-        return ("Shield");
+        return ("Bouclier");
     }
     else if (numb===1){
-        return ("Axe");
+        return ("Hache");
     }
     else {
-        return ("Bow");
+        return ("Arc");
     }
 }
 
