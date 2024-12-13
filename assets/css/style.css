@@ -267,6 +267,10 @@ main {
     border-radius: 50px;
 }
 
+.rules>p {
+    color: #ffffff;
+}
+
 .endScreen {
     padding: 5%;
     height: 100vh;
